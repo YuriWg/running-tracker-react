@@ -1,0 +1,47 @@
+
+.calendar-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.months-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.month-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #543A29;
+}
+
+.grid {
+    stroke: rgba(0, 0, 0, 0.1);
+    stroke-width: 1;
+}
+
+.days-grid line {
+    stroke: rgba(0, 0, 0, 0.03);
+}
+
+.running-icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.running-icon:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}

@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #FDFAF6;
+    --secondary-color: #543A29;
+    --accent-color: #FF9966;
+    --background-color: #FDFAF6;
+    --title-color: #432818;
+    --text-color: #543A29;
+    --text-secondary: #896B54;
+    --border-color: rgba(162, 139, 122, 0.15);
+    --long-run-color: #FF9966;
+    --medium-run-color: #FFD700;
+    --short-run-color: #87CEEB;
+    --heart-rate-low: #7FD8BE;
+    --heart-rate-medium: #FFD700;
+    --heart-rate-high: #FF9966;
+
+    --font-family: 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;
+
+    --font-size-title: 64px;
+    --font-size-subtitle: 25px;
+    --font-size-quote: 20px;
+    --font-size-label: 18px;
+    --font-size-data: 18px;
+    --font-size-small: 16px;
+    --font-size-tiny: 15px;
+
+    --border-radius: 15px;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}

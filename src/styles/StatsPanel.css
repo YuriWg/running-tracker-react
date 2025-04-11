@@ -1,0 +1,37 @@
+
+.stats-panel {
+    background-color: rgba(253, 250, 246, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.stats-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #432818;
+    margin-bottom: 15px;
+}
+
+.stats-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(162, 139, 122, 0.15);
+}
+
+.stats-item:last-child {
+    border-bottom: none;
+}
+
+.stats-value {
+    font-size: 18px;
+    color: #543A29;
+}
+
+.stats-description {
+    font-size: 16px;
+    color: #896B54;
+}

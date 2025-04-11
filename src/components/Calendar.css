@@ -1,0 +1,108 @@
+.calendar-container {
+  width: 100%;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: #FDFAF6;
+  border-radius: 15px;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);*/
+  overflow: hidden;
+  /* 移除固定的高度限制，让内容决定高度 */
+  min-height: 400px; /* 设置最小高度 */
+  max-width: 900px; /* 限制最大宽度 */
+  transition: all 0.3s ease;
+}
+
+.calendar-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.calendar-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: #896B54;
+  font-size: 18px;
+}
+
+.day-cell {
+  fill: #FDFAF6;
+  stroke: rgba(162, 139, 122, 0.15);
+  stroke-width: 1px;
+  transition: all 0.2s ease;
+}
+
+.day-cell:hover {
+  stroke: rgba(162, 139, 122, 0.4);
+  cursor: pointer;
+}
+
+.day-cell rect:hover {
+  stroke: #777;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+.day-with-run {
+  cursor: pointer;
+}
+
+.month-label {
+  font-size: 14px;
+  font-weight: 500;
+  fill: #333;
+  text-anchor: middle;
+}
+
+.day-label {
+  font-size: 12px;
+  fill: #896B54;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.weekday-label {
+  font-size: 12px;
+  fill: #666;
+  font-weight: 500;
+}
+
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  background: white;
+  padding: 15px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 999;
+  max-width: 280px;
+  min-width: 200px;
+  border: 1px solid rgba(162, 139, 122, 0.15);
+  transition: opacity 0.2s ease;
+}
+
+/* 添加响应式样式 */
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 8px;
+    min-height: 350px;
+    margin: 15px auto;
+  }
+  
+  .tooltip {
+    max-width: 240px;
+    min-width: 180px;
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-container {
+    padding: 5px;
+    min-height: 300px;
+  }
+}

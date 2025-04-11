@@ -1,0 +1,249 @@
+.legend-panel {
+  position: absolute;
+  top: 300px;
+  right: 30px;
+  width: 360px;
+  background-color: #FDFAF6;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(162, 139, 122, 0.15);
+  overflow: hidden;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.legend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  background-color: rgba(67, 40, 24, 0.05);
+  border-bottom: 1px solid rgba(162, 139, 122, 0.1);
+}
+
+.legend-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #432818;
+}
+
+.legend-subtitle {
+  margin: 15px 0 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #543A29;
+  text-align: center;
+}
+
+.legend-toggle-button {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 16px;
+  color: #432818;
+}
+
+.legend-toggle-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.legend-content {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend-section {
+  margin-bottom: 16px;
+}
+
+.shape-section {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  position: relative;
+}
+
+.icon-example {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-arrows {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.pace-arrow {
+  top: 20px;
+  right: 0;
+}
+
+.pace-arrow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 55px;
+  width: 40px;
+  height: 1px;
+  background-color: #543A29;
+  opacity: 0.6;
+  transform: rotate(-30deg);
+}
+
+.pace-arrow::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: 52px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #543A29;
+  opacity: 0.8;
+}
+
+.pace-arrow .arrow-label {
+  position: absolute;
+  right: 5px;
+  top: -5px;
+  font-size: 12px;
+  color: #543A29;
+}
+
+.distance-arrow {
+  bottom: 20px;
+  right: 0;
+}
+
+.distance-arrow::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 55px;
+  width: 40px;
+  height: 1px;
+  background-color: #543A29;
+  opacity: 0.6;
+  transform: rotate(30deg);
+}
+
+.distance-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 52px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #543A29;
+  opacity: 0.8;
+}
+
+.distance-arrow .arrow-label {
+  position: absolute;
+  right: 5px;
+  bottom: -5px;
+  font-size: 12px;
+  color: #543A29;
+}
+
+.color-section {
+  margin-top: 10px;
+}
+
+.color-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.color-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.color-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 33%;
+}
+
+.color-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.color-label {
+  font-size: 12px;
+  color: #543A29;
+  text-align: center;
+}
+
+.legend-collapsed {
+  position: absolute;
+  top: 320px;
+  right: 30px;
+  z-index: 100;
+}
+
+.legend-collapsed-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #432818;
+  border: 1px solid rgba(162, 139, 122, 0.2);
+  transition: all 0.2s;
+}
+
+.legend-collapsed-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .legend-panel {
+    width: 350px;
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .legend-collapsed {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+  }
+}
