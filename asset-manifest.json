@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/running-tracker-react/static/css/main.790db39e.css",
+    "main.js": "/running-tracker-react/static/js/main.f00a2a4b.js",
+    "index.html": "/running-tracker-react/index.html",
+    "main.790db39e.css.map": "/running-tracker-react/static/css/main.790db39e.css.map",
+    "main.f00a2a4b.js.map": "/running-tracker-react/static/js/main.f00a2a4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.790db39e.css",
+    "static/js/main.f00a2a4b.js"
+  ]
+}
