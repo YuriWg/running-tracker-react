@@ -1,107 +1,57 @@
 # Running Tracker React
 
-This project is a React application for tracking running activities, visualizing data, and providing insights into running statistics. It is designed to be responsive and user-friendly, utilizing D3.js for data visualization.
+[English](#english) | [中文](#chinese)
 
-## Project Structure
+<a id="english"></a>
 
-The project is organized as follows:
+## English
 
-```
-running-tracker-react
-├── public
-│   ├── index.html          # Main HTML file for the application
-│   ├── favicon.ico         # Application icon
-│   ├── manifest.json       # Web app manifest file
-│   └── assets
-│       └── lib
-│           └── d3.v7.min.js # Local version of D3.js library
-├── src
-│   ├── App.js              # Main application component
-│   ├── App.css             # Main styles for the application
-│   ├── index.js            # Entry point for the React application
-│   ├── index.css           # Global styles
-│   ├── components          # Reusable components
-│   │   ├── Title.js
-│   │   ├── Quote.js
-│   │   ├── Calendar.js
-│   │   ├── RunningIcon.js
-│   │   ├── StatsPanel.js
-│   │   ├── TooltipManager.js
-│   │   └── ExportButton.js
-│   ├── utils               # Utility functions
-│   │   ├── dataProcessor.js
-│   │   ├── dateUtils.js
-│   │   ├── formatters.js
-│   │   ├── d3Loader.js
-│   │   ├── textUtils.js
-│   │   └── responsiveUtils.js
-│   ├── data                # Data files
-│   │   ├── runningData.js
-│   │   ├── sampleData.js
-│   │   └── quotes.js
-│   ├── hooks               # Custom hooks
-│   │   ├── useRunningData.js
-│   │   ├── useResizeObserver.js
-│   │   └── useD3.js
-│   ├── context             # Context for global state management
-│   │   └── AppContext.js
-│   └── styles              # Component-specific styles
-│       ├── variables.css
-│       ├── Calendar.css
-│       ├── StatsPanel.css
-│       └── Tooltip.css
-├── .github
-│   └── workflows
-│       └── deploy.yml      # GitHub Actions workflow for deployment
-├── .gitignore              # Files and folders to ignore in Git
-├── package.json            # npm configuration file
-├── README.md               # Project documentation
-├── LICENSE                 # Project license
-└── .env                    # Environment variables
-```
+A running data tracking and visualization application developed with React. This app allows users to record running activities, view statistics, and analyze their running performance through interactive charts.
 
-## Migration Guide
+### Features
 
-1. Migrate D3.js related code to `src/utils/d3Loader.js` and ensure it is called in the necessary components.
-2. Move data processing logic to `src/utils/dataProcessor.js` and call it in the required components.
-3. Transfer drawing logic to the respective components like `Calendar.js`, `StatsPanel.js`, etc.
-4. Move state management logic to `src/hooks/useRunningData.js` and use this hook in `App.js`.
-5. Ensure all component styles match the original project's styles.
+- Running data visualization in calendar view
+- Statistics panel showing key metrics
+- Responsive design for various devices
+- Data export functionality
+- Motivational running quotes
 
-## Deployment to GitHub Pages
+### Technology Stack
 
-1. Add a `homepage` field in `package.json` to set the GitHub Pages URL, e.g., `"homepage": "https://<username>.github.io/running-tracker-react"`.
-2. Add deployment scripts in `package.json`:
-   ```json
-   "scripts": {
-       "predeploy": "npm run build",
-       "deploy": "gh-pages -d build"
-   }
-   ```
-3. Install the `gh-pages` package:
-   ```
-   npm install gh-pages --save-dev
-   ```
-4. Run the deployment command:
-   ```
-   npm run deploy
-   ```
-5. Ensure GitHub repository settings enable GitHub Pages, selecting the `gh-pages` branch as the source. 
+- React 18
+- React Router v6
+- D3.js for data visualization
+- HTML Canvas for image export
 
-## Getting Started
 
-To get started with the project, clone the repository and install the dependencies:
+### License
 
-```bash
-git clone https://github.com/<username>/running-tracker-react.git
-cd running-tracker-react
-npm install
-```
+[MIT](LICENSE)
 
-Then, start the development server:
+---
 
-```bash
-npm start
-```
+<a id="chinese"></a>
 
-Visit `http://localhost:3000` in your browser to view the application.
+## 中文
+
+一个使用 React 开发的跑步数据追踪和可视化应用。该应用允许用户记录跑步活动、查看统计数据，并通过交互式图表分析自己的跑步表现。
+
+### 功能特点
+
+- 跑步数据可视化日历视图
+- 统计面板显示关键指标
+- 响应式设计，适配各种设备
+- 数据导出功能
+- 跑步引言激励
+
+### 技术栈
+
+- React 18
+- React Router v6
+- D3.js 用于数据可视化
+- HTML Canvas 用于图像导出
+
+
+### 许可证
+
+[MIT](LICENSE)
