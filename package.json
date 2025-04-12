@@ -2,10 +2,9 @@
   "name": "running-tracker-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://YuriWg.github.io/running-tracker-react",
+  "homepage": "https://yuriwg.github.io/running-tracker-react",
   "dependencies": {
     "d3": "^7.0.0",
-    "gh-pages": "^6.3.0",
     "html2canvas": "^1.4.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -18,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "node deploy-gh-pages.js"
   },
   "browserslist": {
     "production": [
@@ -31,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
